@@ -5,7 +5,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   fill(150, 150, 255);
   noStroke();
-  textSize(40);
+  textSize(width/15);
   textAlign(CENTER, CENTER);
 
   frameRate(15);
@@ -13,7 +13,7 @@ function setup() {
 }
 
 function draw() {
-  background(0, 50);
+  background(0, 90);
   
   xoff = xoff + 0.01;
   yoff = yoff + 0.01;
