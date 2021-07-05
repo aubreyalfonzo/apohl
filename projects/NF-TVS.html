@@ -1,0 +1,82 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+		<title>APOHL/NF-TVS</title>
+	
+	<link rel="stylesheet" href="../css/stylesheet.css">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+	
+	<div class="contFrame">
+
+		<div class="header">
+		<ul>
+				<li><a href="../index.html">PLAY</a></li>
+				<li><a href="../home.html">WORK</a></li>
+				<li><a href="../info.html">INFO</a></li>
+				<li><a href="../teaching.html">TEACH</a></li>
+			</ul>
+		</div>
+
+		<!-- //////////////////////// FULL CONTAINER //////////////////////// -->
+		<!-- <div class="fullCont"></div> -->
+
+
+
+		<!-- //////////////////////// INFO CONTAINER //////////////////////// -->
+		<div class="collapsible">INFO</div>
+		<div class="infoCont">
+			<h2>ABOUT NF-TVS</h2>
+			<hr class="a">
+			<p>NF-TVS is a design research project completed for the International Master of Design Thesis at FHNW HGK Basel and UIC Chicago. All experimentation and research was conducted in Basel, Switzerland.</p>
+			<hr class="a">
+			<p>The aim of this project is to take a critical and experimental approach to the topic of NFT art spaces and marketplaces. To question the tangibility, value, and effects of these spaces, which otherwise remain unseen, out of view, and unfelt.</p>
+			<hr class="a">
+			<p>This project is an experimentation in information design and data visualization. More specifically, I am working in the realm of data abstraction, which by my definiton fuctions as an intersection between emotional and practical data visualization design.</p>
+			<hr class="a">
+			<p>To view the full project, visit:</p>
+			<a class="infoL" href="https://nf-tv.org/" target="_blank">NF-TV.ORG</a>
+		</div>
+
+
+		<!-- //////////////////////// MAIN CONTAINER //////////////////////// -->
+		<div class="mainCont">
+			<h2>OUTPUTS</h2>
+			<hr class="a">
+		</div>
+
+		<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+	</div>
+
+<!-- </div> -->
+
+</body>
+	
+
+</html>

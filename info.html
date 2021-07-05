@@ -4,7 +4,7 @@
 
 <head>
 	<meta charset="UTF-8">
-		<title>TITLE</title>
+		<title>INFO</title>
 	
 	<link rel="stylesheet" href="css/stylesheet.css">
 
@@ -29,13 +29,40 @@
 			</ul>
 		</div>
 
+		<!-- <div class="collapsible">CONTACT</div>
+			<div class="infoCont">
+				<div class="espace"></div>
+			<h2>apohl.ch
+			<br>
+			ap@apohl.ch
+			<br>
+			+12286719376
+			<br>
+			IG: aubreyalfonzo
+			</h2>
+		</div> -->
+
+
 		<div class="fullCont">
 
 		<!-- //////////////////// START CV ROW 1 /////////////////////// -->
 
 	<div class="grid-container">
 		<div class ="grid-item">
-			<h2>Education</h2>
+			<h2>CONTACT</h2>
+			<hr class="a">
+			<h3>apohl.ch
+			<br>
+			ap@apohl.ch
+			<br>
+			+12286719376
+			<br>
+			IG: aubreyalfonzo
+			<hr class="a">
+			</h3>
+		</div>
+		<div class ="grid-item">
+			<h2>EDUCATION</h2>
 			<hr class="a">
 			<h3>MAS Master of Advanced Studies, Graphic Design
 			<br>
@@ -65,7 +92,7 @@
 	</div> -->
 		</div>
 		<div class ="grid-item">
-			<h2>Experience</h2>
+			<h2>EXPERIENCE</h2>
 			<hr class="a">
 			<h3>Visiting Professor of Graphic Design
 			<br>
@@ -89,25 +116,18 @@
 			<hr class="a">
 		    </h3>
 		</div>
-		<div class ="grid-item">
-			<h2>Contact</h2>
-			<hr class="a">
-			<h3>apohl.ch
-			<br>
-			ap@apohl.ch
-			<br>
-			+12286719376
-			<br>
-			IG: aubreyalfonzo
-			<hr class="a">
-			</h3>
-		</div>
 
 	<!-- //////////////////// END CV ROW 1 /////////////////////// -->
 
 	<!-- //////////////////// START CV ROW 2 /////////////////////// -->
+		
 		<div class="grid-item">
-			<h2>Mediums</h2>
+			<h2>ME</h2>
+			<hr class="a">
+		<img src="https://github.com/aubreyalfonzo/apohl/blob/master/data/assets/ME.png?raw=true" width="100%">
+		</div>
+		<div class="grid-item">
+			<h2>MEDIUMS</h2>
 			<hr class="a">
 			<h3>Branding / Identity Design
 			<br>
@@ -120,11 +140,11 @@
 			Creative Coding
 			<br>
 			Video / Motion Design
-			<br>
+			<hr class="a">
 			</h3>
 		</div>
 		<div class="grid-item">
-			<h2>Awards</h2>
+			<h2>AWARDS</h2>
 			<hr class="a">
 			<h3>Work displayed at Galarie 143
 			<br>
@@ -152,15 +172,6 @@
 			2016
 			<hr class="a">
 			<br>
-			Work displayed in Transient Space
-			<br>
-			Manchester School of Art
-			<br>
-			Submitted by Playlab, Inc.
-			<br>
-			2018
-			<hr class="a">
-			<br>
 			Skopje International Poster Competition
 			<br>
 			Finalist
@@ -172,20 +183,34 @@
 			<hr class="a">
 			</h3>
 		</div>
-		<div class="grid-item">
-			<h2>Me</h2>
-			<hr class="a">
-			<br>
-			<div>
-		<img src="https://github.com/aubreyalfonzo/apohl.ch/blob/master/data/assets/ME.png?raw=true" width="100%">
-	</div>
 </div>
-
-		
 	
 	<!-- //////////////////// END CV ROW 2 /////////////////////// -->	
 
+	<div class="espace"></div>
+	<!-- <div class="espace"></div> -->
+
 	</div>
+
+
+	<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+
 	</div>
 
 <!-- </div> -->
