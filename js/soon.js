@@ -24,8 +24,8 @@ function draw() {
   
   let x2 = floor(random(width));
   let y2 = floor(random(height));
-  let w = floor(random(width/2));
-  let h = floor(random(height/2));
+  let w = floor(random(width));
+  let h = floor(random(height));
   
   copy(x2, y2, w, h, w, h, w, h);
 
