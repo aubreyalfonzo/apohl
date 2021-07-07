@@ -128,8 +128,26 @@ img{
 	width: 100%;
 }
 
+.iframeCont{
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	padding-top: 56.25%;
+}
 
-.contFrame, iframe{
+.iframeCont iframe{
+	border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
+
+iframe{
+}
+
+.contFrame, .js-cont{
 	position: fixed;
 	overflow: hidden;
 	top: 5%;
@@ -143,7 +161,7 @@ img{
 	z-index: 2;
 }
 
-iframe{
+.js-cont{
 	z-index: -1;
 }
 
@@ -306,14 +324,15 @@ img.mob{
 
 }
 
+
 .grid-container3{
 	grid-row-gap: 5%;
 	grid-column-gap: 5%;
 }
 
-.grid-item{
+/*.grid-item{
 	padding-bottom: 40px;
-}
+}*/
 
 
 .imgLink{
@@ -329,7 +348,7 @@ img.mob{
 	opacity: 0.5;
 }
 
-.contFrame, iframe{
+.contFrame, .js-cont{
 	position: fixed;
 	overflow: hidden;
 	top: 0%;
