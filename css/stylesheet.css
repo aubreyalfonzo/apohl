@@ -212,6 +212,24 @@ iframe{
 	display: none;
 }
 
+.collapsible2{
+	padding: 0%;
+	border-style: none;
+	margin: 0;
+	display: block;
+	position: relative;
+	left: 0;
+	float: all;
+	width: 100%;
+	border: thin dashed white;
+	text-align: center;
+	font-family: 'Roboto Mono', monospace;
+	color: #ffffff;
+	font-size: 20px;
+	background-color: rgb(50, 50, 50);
+	z-index: 1;
+}
+
 .header{
 	text-align: center;
 	font-family: 'Roboto Mono', monospace;
@@ -258,6 +276,11 @@ iframe{
 	grid-row-gap: 3%;
 }
 
+.grid-container4{
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
+
 
 .grid-item{
 	height: 100%;
@@ -274,6 +297,7 @@ iframe{
 	width: 30%;
 	height: 100%;
 	overflow: scroll;
+	-webkit-overflow-scrolling: touch;
 }
 
 .mainCont{
@@ -285,6 +309,7 @@ iframe{
 	height: 100%;
 	position: relative;
 	overflow: scroll;
+	-webkit-overflow-scrolling: touch;
 	border-left: thin dashed rgb(255, 255, 255);
 }
 
@@ -297,10 +322,15 @@ iframe{
 	height: 100%;
 	position: relative;
 	overflow: scroll;
+	-webkit-overflow-scrolling: touch;
 }
 
 .subCont{
 	display: none;
+	padding: 2%;
+	border-style: none;
+	border: thin dashed white;
+	/*height: 100%;*/
 }
 
 
@@ -310,6 +340,11 @@ iframe{
 
 img.mob{
 	display: none;
+}
+
+.collapsible2:hover{
+	background-color: #ffffff;
+	color: #000000;
 }
 
 /* /////////////////// OUTSOURCED DIVS  ////////////////////// */
@@ -435,13 +470,14 @@ marquee{
 	z-index: 1;
 }
 
-.collapsible:hover{
-	background-color: #ffffff;
-	color: #000000;
-}
 
 img.mob{
 	display: block;
+}
+
+.collapsible:hover{
+	background-color: #ffffff;
+	color: #000000;
 }
 
 }
