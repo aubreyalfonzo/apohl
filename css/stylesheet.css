@@ -11,6 +11,7 @@ html{
 body{
 	margin: 0;
 	overflow: scroll;
+	/*overflow-y: hidden;*/
 	padding: 0%;
 	background-color: #000000;
 	cursor: pointer;
@@ -134,7 +135,9 @@ marquee.inline{
 
 img{
 	width: 100%;
+	height: auto;
 }
+
 
 .iframeCont{
 	position: relative;
@@ -286,6 +289,25 @@ iframe{
 	height: 100%;
 }
 
+.scrollImg{
+	width: 100vw;
+	height: 60vh;
+	text-align: center;
+}
+
+.imageScroll{
+	/*display: inline-block;
+	overflow-x: scroll;
+	float: all;
+	white-space: nowrap;
+	align-items: center;
+	justify-content: center;*/
+	display: flex;
+	overflow-x: auto;
+	overflow-y: hidden;
+
+}
+
 
 .infoCont{
 	float: left;
@@ -352,6 +374,10 @@ img.mob{
 /* /////////////////// MEDIUM SCREEN  ////////////////////// */
 
 @media screen and (max-width:  1200px){
+
+.scrollImg{
+	width: 200vw;
+}
 
 .header{
 	width: 99.3%;
@@ -487,6 +513,7 @@ img.mob{
 /* /////////////////// SMALL SCREEN  ////////////////////// */
 
 @media screen and (max-width:  600px){
+
 
 .infoCont{
 	float: left;
