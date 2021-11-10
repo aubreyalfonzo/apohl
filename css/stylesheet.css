@@ -262,7 +262,7 @@ iframe{
 
 .grid-container{
 	display: grid;
-	grid-template-columns: auto auto auto;
+	grid-template-columns: 300px auto auto;
 	grid-column-gap: 3%;
 	grid-row-gap: 3%;
 }
@@ -325,6 +325,7 @@ iframe{
 	padding-right: 1%;
 	width: 65.9%;
 	height: 100%;
+	margin: 0;
 	position: relative;
 	overflow: scroll;
 	-webkit-overflow-scrolling: touch;
@@ -338,6 +339,7 @@ iframe{
 	padding-right: 1%;
 	width: 98%;
 	height: 100%;
+	margin: 0;
 	position: relative;
 	overflow: scroll;
 	-webkit-overflow-scrolling: touch;
@@ -346,6 +348,7 @@ iframe{
 .subCont{
 	display: none;
 	padding: 2%;
+	margin: 0;
 	border-style: none;
 	border: thin dashed white;
 	/*height: 100%;*/
