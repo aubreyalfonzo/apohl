@@ -49,17 +49,20 @@
 				INSTRUCTOR:<br>
 				AUBREY POHL<br>
 				APOHL@CAAD.MSSTATE.EDU<br>
+				STAFFORD 211<br>
 			</p>
 				<a class="pageL" target="_blank" href="https://apohl.ch/">APOHL.CH</a>
 			<h2>NEWS</h2>
 
-			<h2>PROJECT RESOURCES</h2>
+			<h2>PROJECT LIST</h2>
 
 			<h2>INSPO</h2>
 
 			<h2>COMPETITIONS</h2>
 
 			<h2>MISC RESOURCES</h2>
+
+			<div class="espace"></div><div class="espace"></div>
 		</div>
 
 
@@ -67,11 +70,13 @@
 		<div class="mainCont">
 			<h2>CURRENT PROJECT(S)</h2>
 
-			<h2>OUTPUTS</h2>
+			<h2>FEATURED OUTPUTS</h2>
 
-			<h2>EXAMPLES</h2>
+			<h2>PROJECTS ARCHIVE</h2>
 
 			<h2>SYLLABUS</h2>
+
+			<div class="espace"></div>
 		</div>
 
 		<script>
@@ -88,6 +93,63 @@ for (i = 0; i < coll.length; i++) {
       content.style.display = "block";
     }
   });
+}
+</script>
+
+<script>
+var coll = document.getElementsByClassName("collapsible2");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+<!-- <script>
+var coll = document.getElementsByClassName("collapsible3");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script> -->
+
+
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("imgSlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
 }
 </script>
 
