@@ -4,17 +4,19 @@ html{
 	margin:0; padding:0;
 	background-color: #000000;
 	scroll-behavior: smooth;
-	cursor: pointer;			
+	/*cursor: pointer;*/
+	cursor: url(../data/assets/cursor-01.png), auto !important;
 }
 
 
 body{
 	margin: 0;
-	overflow: scroll;
+	overflow: hidden;
 	/*overflow-y: hidden;*/
 	padding: 0%;
 	background-color: #000000;
-	cursor: pointer;
+	/*cursor: pointer;*/
+	cursor: url(../data/assets/cursor-01.png), auto !important;
 	/*z-index: 1;*/
 }
 
@@ -61,6 +63,7 @@ a{
 	display: block;
 	/*background-color: #4B4B4B;*/
 	background-color: rgb(0, 0, 0);
+	cursor: url(../data/assets/cursor-01.png), auto !important;
 }
 
 a.infoL{
@@ -156,6 +159,10 @@ img{
 }
 
 iframe{
+	border-style: none;
+	position: relative;
+	width: 100%;
+	height: 50vh;
 }
 
 .contFrame, .js-cont{
@@ -225,7 +232,7 @@ iframe{
 	float: all;
 	width: 100%;
 	border: thin dashed white;
-	text-align: center;
+	text-align: left;
 	font-family: 'Roboto Mono', monospace;
 	color: #ffffff;
 	font-size: 20px;
@@ -265,11 +272,14 @@ iframe{
 	grid-template-columns: 300px auto auto;
 	grid-column-gap: 3%;
 	grid-row-gap: 3%;
+	overflow: scroll;
+	-webkit-overflow-scrolling: touch;
 }
 
 .grid-container2{
 	display: grid;
 	grid-template-columns: auto auto;
+	-webkit-overflow-scrolling: touch;
 }
 
 .grid-container3{
@@ -277,11 +287,13 @@ iframe{
 	grid-template-columns: 46% auto;
 	grid-column-gap: 3%;
 	grid-row-gap: 3%;
+	-webkit-overflow-scrolling: touch;
 }
 
 .grid-container4{
 	display: grid;
 	grid-template-columns: auto auto auto;
+	-webkit-overflow-scrolling: touch;
 }
 
 
@@ -293,7 +305,18 @@ iframe{
 	/*height: 60vw;*/
 	display: flex;
 	overflow-x: auto;
-	overflow-y: hidden;
+	overflow-y: scroll;
+
+}
+
+.imageScroll::-webkit-scrollbar {
+	/*width: 25px;*/
+	height: 20px;
+
+}
+
+.imageScroll::-webkit-scrollbar-thumb {
+	background: rgb(150, 150, 255);
 
 }
 
@@ -312,10 +335,40 @@ iframe{
 	padding-right: 1%;
 	margin: 0;
 	position: relative;
-	width: 30%;
+	width: 25%;
 	height: 100%;
 	overflow: scroll;
 	-webkit-overflow-scrolling: touch;
+}
+
+.infoCont2{
+	float: left;
+	padding-top: 2%;
+	padding-left: 1%;
+	padding-right: 1%;
+	margin: 0;
+	position: relative;
+	width: 25%;
+	height: 100%;
+	overflow: scroll;
+	-webkit-overflow-scrolling: touch;
+}
+
+.infoCont3{
+	float: left;
+	padding-top: 2%;
+	padding-left: 1%;
+	padding-right: 1%;
+	margin: 0;
+	position: relative;
+	width: 34.5%;
+	height: 100%;
+	overflow: scroll;
+	-webkit-overflow-scrolling: touch;
+}
+
+.infoCont4{
+	display: none;
 }
 
 .mainCont{
@@ -323,7 +376,7 @@ iframe{
 	padding-top: 2%;
 	padding-left: 1%;
 	padding-right: 1%;
-	width: 65.9%;
+	width: 70.9%;
 	height: 100%;
 	margin: 0;
 	position: relative;
@@ -368,6 +421,12 @@ img.mob{
 	color: #000000;
 }
 
+.spacerDiv{
+	position: relative;
+	width: 100%;
+	height: 10%;
+}
+
 /* /////////////////// OUTSOURCED DIVS  ////////////////////// */
 
 /* /////////////////// MEDIUM SCREEN  ////////////////////// */
@@ -377,6 +436,12 @@ img.mob{
 /*.scrollImg{
 	max-width: 200vw;
 }*/
+
+.imageScroll::-webkit-scrollbar {
+	width: 0px;
+	height: 0px;
+
+}
 
 .header{
 	width: 99.3%;
@@ -439,6 +504,11 @@ img.mob{
 	display: none;
 }
 
+.infoCont2, .infoCont3{
+	padding-top: 3%;
+}
+
+
 .mainCont{
 	float: left;
 	padding: 1%;
@@ -466,6 +536,10 @@ marquee{
 
 .espace2{
 	display: block;
+	height: 5%;
+}
+
+.spacerDiv{
 	height: 5%;
 }
 
@@ -528,6 +602,21 @@ img.mob{
 	/*overflow: scroll;*/
 }
 
+.infoCont2, .infoCont3{
+	display: none;
+}
+
+.infoCont4{
+	display: block;
+	padding: 1%;
+	top: 20px;
+	position: relative;
+	width: 98%;
+	height: 100%;
+	overflow: scroll;
+	-webkit-overflow-scrolling: touch;
+}
+
 .mainCont{
 	float: left;
 	padding: 1%;
@@ -560,6 +649,10 @@ img.mob{
 .grid-container3{
 	display: block;
 	/*grid-template-columns: auto;*/
+}
+
+.spacerDiv{
+	display: none;
 }
 
 

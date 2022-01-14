@@ -1,0 +1,154 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+		<title>APOHL/COVID-PERSPECTIVES</title>
+	
+	<link rel="stylesheet" href="../../css/stylesheet.css">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+	
+	<div class="contFrame">
+
+		<div class="header">
+		<ul>
+				<li><a href="../../index.html">PLAY</a></li>
+				<li><a href="../../home.html">WORK</a></li>
+				<li><a href="../../info.html">INFO</a></li>
+				<li><a href="../../teaching.html">TEACH</a></li>
+			</ul>
+		</div>
+
+		<!-- //////////////////////// FULL CONTAINER //////////////////////// -->
+		
+		<!-- <div class="fullCont"></div> -->
+
+
+
+		<!-- //////////////////////// INFO CONTAINER //////////////////////// -->
+		<div class="collapsible">INFO</div>
+		<div class="infoCont">
+			<h2>ABOUT</h2>
+			<!-- <hr class="a"> -->
+			<p>2020</p>
+			<hr class="a">
+			<p>This project is about restrictions in space and freedom during the initial lockdowns brought on by the COVID 19 pandemic. What does it mean to find freedom in a time where freedom is confined for the greater good? What does freedom look like in COVID 19 times?
+			<br><br>
+			The study of the relationship between open and confined space, 2D and 3D space, and the conversations bewteen these spaces take the form of a multitude of outputs, sketches if you will. Even the final product, the three panels in physical space, exists as a sketch
+			<br><br>
+			The main symbolic theme throughout the explorations, is the window motif. For many, the view from behind our window s at home became the new perspective during lockdown times. To me, this view begged the question, “what are the windows we look through, and what perspectives on freedom can we take in these time?”</p>
+			<hr class="a">
+			<p>More info and outputs coming soon.</p>
+
+			<div class="espace"></div>
+			<div class="espace2"></div>
+		</div>
+
+
+		<!-- //////////////////////// MAIN CONTAINER //////////////////////// -->
+		<div class="mainCont">
+			<h2>OUTPUTS</h2>
+			<!-- <hr class="a"> -->
+			<img loading="lazy" src="../../data/projects/RESEARCH/FREEDOM/INDIE%201.jpeg?raw=true">
+			<img loading="lazy" src="../../data/projects/RESEARCH/FREEDOM/INDIE%202.jpeg?raw=true">
+			<img loading="lazy" src="../../data/projects/RESEARCH/FREEDOM/INDIE%203.jpeg?raw=true">
+			<img loading="lazy" src="../../data/projects/RESEARCH/FREEDOM/INDIE%204.jpeg?raw=true">
+			<img loading="lazy" src="../../data/projects/RESEARCH/FREEDOM/INDIE%205.jpeg?raw=true">
+			<img loading="lazy" src="../../data/projects/RESEARCH/FREEDOM/INDIE%206.jpeg?raw=true">
+			<img loading="lazy" src="../../data/projects/RESEARCH/FREEDOM/INDIE.jpeg?raw=true">
+
+			<div class="espace"></div>
+			<div class="espace2"></div>
+		</div>
+
+		<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+<script>
+var coll = document.getElementsByClassName("collapsible2");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+<!-- <script>
+var coll = document.getElementsByClassName("collapsible3");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script> -->
+
+
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("imgSlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+	</div>
+
+<!-- </div> -->
+
+</body>
+	
+
+</html>

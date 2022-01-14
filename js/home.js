@@ -1,3 +1,12 @@
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
+
+// custom ease function
+function ease(iVal, oVal, eVal){
+  return oVal += (iVal - oVal) * eVal;
+}
+
 let xoff = 0.0;
 let yoff = 0.0;
 

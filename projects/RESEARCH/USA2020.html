@@ -1,0 +1,175 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+		<title>APOHL/USA-2020</title>
+	
+	<link rel="stylesheet" href="../../css/stylesheet.css">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+	
+	<div class="contFrame">
+
+		<div class="header">
+		<ul>
+				<li><a href="../../index.html">PLAY</a></li>
+				<li><a href="../../home.html">WORK</a></li>
+				<li><a href="../../info.html">INFO</a></li>
+				<li><a href="../../teaching.html">TEACH</a></li>
+			</ul>
+		</div>
+
+		<!-- //////////////////////// FULL CONTAINER //////////////////////// -->
+		<!-- <div class="fullCont"></div> -->
+
+
+
+		<!-- //////////////////////// INFO CONTAINER //////////////////////// -->
+		<div class="collapsible">INFO</div>
+		<div class="infoCont">
+			<h2>ABOUT</h2>
+			<!-- <hr class="a"> -->
+			<p>2020</p>
+			<hr class="a">
+			<p>The aim of this project is to observe and study the American identity in the year 2020, as well as my own perceptions of my personal identity as an American, via experiments with flag manipulation and creation, and data abstraction.</p>
+			<hr class="a">
+			<p>This project crosses the threshold of many disciplines, as the design practice often does, including but not limited to: anthropology, vexillology, journalism, and statistics.
+			<br><br>
+			2020 was a chaotic year for the world, but thanks to the constant presence of the United States in the news, 2020 in the US was shown on the world stage, and was perhaps esspecially impactful to Americans themselves. The once unbreakbable stronghold we were taught as children was our country started to look a bit more fragile, flemsy, confusing, and dangerous.</p>
+			<hr class="a">
+			<p>OBJECTIVE:
+			<br><br>
+			The objective is to study the cultural identity of the United States of America relevant specifically to politics, events, culture, and ways of living in the year 2020, and in turn question my own American Identity. I will do so by manipulating images of American symbolism, specifically the American flag, by means of both analogand digital processes.
+			<br><br>
+			My goal is to collect and use data relevant to these topics in order to create an anthology of experiments.
+			<br><br>
+			I choose to use the term data abstraction as opposed to data visualization, as I do not hope for these experiments to stand as practical applications for understanding data, but rather understandings of many concepts that are supported by the influence of data.</p>
+			<hr class="a">
+			<p>DESIGN QUESTION(S):
+			<br><br>
+			1. In what ways can the manipulation and creation of flags be used to express current and ongoing narratives by way of data abstraction?
+			<br><br>
+			2. What are the inherent rules of flag design, and how are these narratives contained, received and sustained in the flag as a medium over time?</p>
+
+			<div class="espace"></div>
+			<div class="espace2"></div>
+		</div>
+
+
+		<!-- //////////////////////// MAIN CONTAINER //////////////////////// -->
+		<div class="mainCont">
+			<h2>OUTPUTS</h2>
+			<!-- <hr class="a"> -->
+			<div class="imageScroll">
+					<img loading="lazy" src="../../data/projects/RESEARCH/USA2020/2020_NACIREMA_FLAG.gif">
+					<img loading="lazy" src="../../data/projects/RESEARCH/USA2020/DOUBLE_FLAG2.gif">
+					<img loading="lazy" src="../../data/projects/RESEARCH/USA2020/2020_US_FLAG_2.gif">
+					<img loading="lazy" src="../../data/projects/RESEARCH/USA2020/COV_DATA_2.gif">
+					<img loading="lazy" src="../../data/projects/RESEARCH/USA2020/CUL_DATA_1.gif">
+					<img loading="lazy" src="../../data/projects/RESEARCH/USA2020/ENV_DATA_1.gif">
+					<img loading="lazy" src="../../data/projects/RESEARCH/USA2020/POL_DATA_1.gif">
+					<img loading="lazy" src="../../data/projects/RESEARCH/USA2020/2020_US_FLAG_4.gif">
+					<img loading="lazy" src="../../data/projects/RESEARCH/USA2020/2020_US_FLAG_1.gif">
+				</div>
+	
+	
+
+			<img loadiing="lazy" src="../../data/projects/RESEARCH/USA2020/PB252784.jpg">
+			<img loading="lazy" src="../../data/projects/RESEARCH/USA2020/NACIREMA_FLAG_FABRIC_BW.jpg">
+
+			<div class="espace"></div>
+			<div class="espace2"></div>
+
+		</div>
+
+		<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+<script>
+var coll = document.getElementsByClassName("collapsible2");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+<!-- <script>
+var coll = document.getElementsByClassName("collapsible3");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script> -->
+
+
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("imgSlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+	</div>
+
+<!-- </div> -->
+
+</body>
+	
+
+</html>

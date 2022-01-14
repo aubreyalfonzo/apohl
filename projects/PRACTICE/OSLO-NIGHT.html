@@ -1,0 +1,150 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+		<title>APOHL/OSLO NIGHT</title>
+	
+	<link rel="stylesheet" href="../../css/stylesheet.css">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+	
+	<div class="contFrame">
+
+		<div class="header">
+		<ul>
+				<li><a href="../../index.html">PLAY</a></li>
+				<li><a href="../../home.html">WORK</a></li>
+				<li><a href="../../info.html">INFO</a></li>
+				<li><a href="../../teaching.html">TEACH</a></li>
+			</ul>
+		</div>
+
+		<!-- //////////////////////// FULL CONTAINER //////////////////////// -->
+		
+		<!-- <div class="fullCont"></div> -->
+
+
+
+		<!-- //////////////////////// INFO CONTAINER //////////////////////// -->
+		<div class="collapsible">INFO</div>
+		<div class="infoCont">
+			<h2>ABOUT</h2>
+			<!-- <hr class="a"> -->
+			<p>2020</p>
+			<hr class="a">
+			<p>OSLO NIGHT is an annual culture and arts festival held at the Dreispitz area in Basel, Switzerland that takes place from sun-up to sun-down. The festival highlights a mix of mediums, institutions, ideas, and exchanges. 
+			<br><br>
+			The key visual for this year, coming out of the first summer of Covid-19, was to be a lighter subject matter to gather around. However, this was not to distract from the seriousness and integrity of the festival. After many discussions, it was decided to use popsicles for the key visual. 
+			<br><br>
+			Although it may feel like a relatively simple task, to photograh popsicles, it proved to be decidely not so. During the brand and key visual developement process, I was on a twenty day road trip across the United States, camping. It’s difficult to near impossible to carry and photograph melting popsicles while spanning America’s western desert landscape. 
+			<br><br>
+			The solution? Fake popsicles. Clay, crumpled styrofoam, wooden popsicle sticks, and a bit of water did the trick.</p>
+			<hr class="a">
+			<p>Case study coming soon.</p>
+
+			<div class="espace"></div>
+			<div class="espace2"></div>
+		</div>
+
+
+		<!-- //////////////////////// MAIN CONTAINER //////////////////////// -->
+		<div class="mainCont">
+			<h2>OUTPUTS</h2>
+			<!-- <hr class="a"> -->
+			<img src="../../data/projects/PRACTICE/OSLO_NIGHT/oslonight_2020_poster_A2_AP_FINAL.png?raw=true">
+
+			<div loading="lazy" class="espace"></div>
+			<div loading="lazy" class="espace2"></div>
+		</div>
+
+		<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+<script>
+var coll = document.getElementsByClassName("collapsible2");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+<!-- <script>
+var coll = document.getElementsByClassName("collapsible3");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script> -->
+
+
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("imgSlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+	</div>
+
+<!-- </div> -->
+
+</body>
+	
+
+</html>
