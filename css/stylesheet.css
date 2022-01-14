@@ -505,7 +505,18 @@ img.mob{
 }
 
 .infoCont2, .infoCont3{
-	padding-top: 3%;
+	display: none;
+}
+
+.infoCont4{
+	display: block;
+	padding: 1%;
+	top: 20px;
+	position: fixed;
+	width: 98%;
+	height: 100%;
+	overflow: scroll;
+	-webkit-overflow-scrolling: touch;
 }
 
 
@@ -602,20 +613,6 @@ img.mob{
 	/*overflow: scroll;*/
 }
 
-.infoCont2, .infoCont3{
-	display: none;
-}
-
-.infoCont4{
-	display: block;
-	padding: 1%;
-	top: 20px;
-	position: relative;
-	width: 98%;
-	height: 100%;
-	overflow: scroll;
-	-webkit-overflow-scrolling: touch;
-}
 
 .mainCont{
 	float: left;
