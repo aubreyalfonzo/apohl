@@ -327,6 +327,20 @@ iframe{
 	text-align: center;
 }
 
+.homeCont{
+	float: left;
+	padding-top: 2%;
+	padding-left: 1%;
+	padding-right: 1%;
+	margin: 0;
+	position: relative;
+	width: 48%;
+	height: 100%;
+	overflow: scroll;
+	-webkit-overflow-scrolling: touch;
+
+}
+
 
 .infoCont{
 	float: left;
@@ -492,6 +506,17 @@ img.mob{
 	height: 99.5%;
 	border-style: none;
 	border: thin dashed rgb(255, 255, 255);
+}
+
+.homeCont{
+	float: left;
+	float: left;
+	padding: 1%;
+	top: 40px;
+	position: relative;
+	/*width: 98%;*/
+	height: 100%;
+	display: none;
 }	
 
 .infoCont{
@@ -533,7 +558,7 @@ img.mob{
 
 .fullCont{
 	float: left;
-	position: relative;
+	position: fixed;
 	top: 30px;
 	padding-top: 1%;
 	width: 98%;
@@ -601,6 +626,17 @@ img.mob{
 /*.scrollImg{
 	max-width: 200vw;
 }*/
+
+.homeCont{
+	float: left;
+	padding: 1%;
+	/*padding-top: 3%;*/
+	position: relative;
+	width: 98%;
+	display: none;
+	/*overflow: scroll;*/
+
+}
 
 
 .infoCont{
