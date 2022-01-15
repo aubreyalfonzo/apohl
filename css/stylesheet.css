@@ -542,7 +542,8 @@ img.mob{
 	position: relative;
 	width: 98%;
 	height: 100%;
-	overflow: scroll;
+	overflow-y: : none;
+	overflow-x: scroll;
 	-webkit-overflow-scrolling: touch;
 }
 
