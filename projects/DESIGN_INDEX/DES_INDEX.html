@@ -1,0 +1,161 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+		<title>APOHL/</title>
+	
+	<link rel="stylesheet" href="../../css/stylesheet.css">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+	
+	<div class="contFrame">
+
+		<div class="header">
+		<ul>
+				<li><a href="../../index.html">APOHL.CH</a></li>
+				<!-- <li><a href="../../home.html">INDEX</a></li> -->
+			</ul>
+		</div>
+
+		<!-- //////////////////////// FULL CONTAINER //////////////////////// -->
+		
+		<div class="fullCont">
+			<div class="grid-container4">
+				<div class="grid-item">
+					<h2>INSPO / RESOURCES</h2>
+					<a class="pageL" target="_blank" href="https://youtube.com/playlist?list=PLwfpgEgnsslKqu4GpBHUoo_2nDaSMfUEp">CURATED YOUTUBE PLAYIST</a>
+					<a class="pageL" target="_blank" href="https://www.instagram.com/designeverywhere_/">DESIGN EVERYWHERE</a>
+					<a class="pageL" target="_blank" href="https://actualsource.org/">ACTUAL SOURCE</a>
+					<a class="pageL" target="_blank" href="https://99percentinvisible.org/">99% INVISIBLE</a>
+					<a class="pageL" target="_blank" href="https://thedesignkids.org/">THE DESIGN KIDS</a>
+					<a class="pageL" target="_blank" href="https://www.itsnicethat.com/">IT'S NICE THAT</a>
+					<a class="pageL" target="_blank" href="https://cargo.site/In-Use">CARGO.SITE</a>
+					<a class="pageL" target="_blank" href="https://thefutur.com/content/graphic-design">THE FUTUR</a>
+					<a class="pageL" target="_blank" href="https://www.vox.com/videos/2019/1/2/18165211/jazz-album-design-blue-note-records">BLUE NOTE RECORD DESIGN / REID MILES</a>
+					<a class="pageL" target="_blank" href="https://laughtoncreatves.com/13-african-american-graphic-designers-know-part-1/">AFRICAN AMERICAN DESIGNERS PT 1</a>
+					<a class="pageL" target="_blank" href="https://laughtoncreatves.com/13-african-american-graphic-designers-part-2/">AFRICAN AMERICAN DESIGNERS PT 2</a>
+				</div>
+
+				<div class="grid-item">
+					<h2>DESIGNER(S)</h2>
+					<a class="pageL" target="_blank" href="https://houseofgul.com/">HOUSE OF GÜL</a>
+					<a class="pageL" target="_blank" href="https://canary---yellow.com/">VIRGIL ABLOH</a>
+					<a class="pageL" target="_blank" href="https://spin.co.uk/">SPIN STUDIO</a>
+					<a class="pageL" target="_blank" href="https://patrickthomas.com/">PATRICK THOMAS</a>
+					<a class="pageL" target="_blank" href="https://epi.aiga.org/medalist-arem-duplessis">AREM DUPLESSIS</a>
+					<a class="pageL" target="_blank" href="https://anahat.design/">ANAHAT KAUR</a>
+					<a class="pageL" target="_blank" href="https://www.fannydemier.com/">FANNY DEMIER</a>
+					<a class="pageL" target="_blank" href="https://onereez.com/">"REEZ" KWAKU OPOKU</a>
+					<a class="pageL" target="_blank" href="https://andrewherzog.com/">ANDREW HERZOG</a>
+					<a class="pageL" target="_blank" href="https://teddavis.org/#">TED DAVIS</a>
+				</div>
+
+				<div class="grid-item">
+					<h2>SPACES / TOOLS</h2>
+					<a class="pageL" target="_blank" href="https://www.open-collab.org/">OPEN-COLLAB</a>
+					<a class="pageL" target="_blank" href="https://ebsynth.com/">EBSYNTH</a>
+					<a class="pageL" target="_blank" href="https://teddavis.org/p5live/"></a>
+					<a class="pageL" target="_blank" href="https://processing.org/">PROCESSING</a>
+				</div>
+
+			</div>
+
+
+			<div class="espace"></div>
+			<div class="espace2"></div>
+		</div>
+
+
+
+		<!-- //////////////////////// INFO CONTAINER //////////////////////// -->
+		<!-- <div class="collapsible">INFO</div>
+		<div class="infoCont">
+			<h2>ABOUT</h2> -->
+			<!-- <hr class="a"> -->
+
+			<!-- <div class="espace"></div>
+			<div class="espace2"></div>
+		</div> -->
+
+
+		<!-- //////////////////////// MAIN CONTAINER //////////////////////// -->
+		<!-- <div class="mainCont">
+			<h2>OUTPUTS</h2> -->
+			<!-- <hr class="a"> -->
+
+			<!-- <div class="espace"></div>
+			<div class="espace2"></div>
+		</div> -->
+
+		<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+<script>
+var coll = document.getElementsByClassName("collapsible2");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("imgSlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+	</div>
+
+<!-- </div> -->
+
+</body>
+	
+
+</html>
