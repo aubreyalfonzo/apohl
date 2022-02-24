@@ -462,8 +462,9 @@ iframe{
 .scrollText{
 	position: relative;
 	padding: 2%;
-	width: 400px;
+	width: 350px;
 	min-width: 350px;
+	max-width: 350px;
 	max-height: 575px;
 	overflow: scroll;
 	-webkit-overflow-scrolling: touch;
