@@ -67,7 +67,7 @@ function draw() {
 
 
 	push();
-	textSize(15);
+	textSize(12);
 	text("scroll to view projects / swipe to read info / scroll overflow text", width/2, height-25);
 	pop();
 
