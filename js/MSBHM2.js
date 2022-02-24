@@ -29,7 +29,7 @@ function setup() {
 	
 	textFont(font);
 	textAlign(CENTER, CENTER);
-	textSize(width/4);
+	textSize(width/5);
 
 	
 }
@@ -48,8 +48,8 @@ function draw() {
 	// img2.resize(width, height);
 	
 	image(img, width/2, height/2);
-	text("MS", x, height/2.5);
-	text("BH", x2, height/1.5);
+	text("THANK", width/2, height/2.5);
+	text("YOU", width/2, height/1.5);
 	
 	push();
 	blendMode(DIFFERENCE);
@@ -62,14 +62,9 @@ function draw() {
 	pop();
 
 	if(windowWidth < 1000){
-		textSize(width/2);
+		textSize(width/4);
 	}
 
-
-	push();
-	textSize(15);
-	text("scroll to view projects", width/5, height-25);
-	pop();
 
 }
 
