@@ -464,7 +464,7 @@ iframe{
 	padding: 2%;
 	width: 400px;
 	min-width: 400px;
-	max-height: 700px;
+	max-height: 550px;
 	overflow: scroll;
 	-webkit-overflow-scrolling: touch;
 }
